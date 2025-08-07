@@ -18,6 +18,6 @@ temp.yaml
 bin
 **/config/config.yaml
 address.txt
-v1.0.0/linux_amd64/laughstorage_staking_tool
+/v1.0.0
 /v1.0.1
 config.toml
