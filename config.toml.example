@@ -1,0 +1,87 @@
+[server]
+#address = "192.168.1.7:8802"
+address = "127.0.0.1:9002"
+openapiPath = ""
+swaggerPath = ""
+appDebug = true
+ 
+[gfcli.build]
+name = "laughstorage_staking_tool"
+system = "linux"
+arch = "amd64"
+version = "v1.0.1"
+packSrc = "resource"
+mod = "none"
+extra = ""
+[logger]
+level = "all"
+stdout = true
+path = "log/"
+writerColorEnable = true
+
+[gfcli.gen.dao]
+link = ""
+group = "default"
+jsonCase = "Snake"
+
+[database.default]
+type = ""
+host = ""
+port = ""
+user = ""
+pass = ""
+name = ""
+timezone = "UTC"
+loc="UTC"
+parseTime = true
+debug = true
+[redis.default]
+address = ""
+db = 4
+pass = ""
+ 
+
+[jwt]
+# Token validity period
+exp = 72000 
+# redis save token prefix
+pre = ""
+# Token issuer
+issuer = ""
+# Token key
+key = ""
+# Token encrypt key
+encryptKey = ""
+
+[siwe]
+# siew verify domain
+domain = ""
+
+
+clientMaxBodySize=30810241024
+ 
+ [ali] # Aliyun oss config use kyc verify
+ # Aliyun oss access key id
+ accessKeyId = ""
+ # Aliyun oss access key secret
+ accessKeySecret = ""
+ # Aliyun oss bucket name
+ ossBucketName = ""
+ # Aliyun oss url
+ ossUrl = ""
+ # Aliyun oss region
+ region = ""
+
+ [app] # App config
+ # Administrator wallet address
+ administrator = ""
+ # Rpc url
+ rpc = ""
+ # Staking contract address
+ stakingContract = ""
+[allocator]
+# allocator contract address [https://contracts-admin.allocator.tech/allocator]
+contract = ""
+# allocator account address
+account  = ""
+accountPrivateKey = ""
